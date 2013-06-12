@@ -22,7 +22,8 @@
         (index "Invalid username and/or password!")))))
 
 (defn home
-  (view/home ))
+  [message]
+  (view/home message))
 
 
 
