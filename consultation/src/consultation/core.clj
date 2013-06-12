@@ -4,11 +4,11 @@
   (:require [compojure.route :as route]
             [compojure.handler :as handler]
             [ring.middleware.session :as session]
-            [view.viewcontroller :as con]))
+            [view.viewcontroller :as viewcontroller]))
 
 
 (defroutes routes
-  con/routes
+  viewcontroller/routes
   (route/resources "/")
   (route/not-found "Page not found!"))
 

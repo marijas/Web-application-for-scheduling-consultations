@@ -29,11 +29,24 @@
  ))
 
 
-(defn login-view
+(defn login
   [message]
   (layout
     (html5
       [:h2 "Log in"]
+      [:form {:method "post" :action "/login"}
+       [:p "Username:  " [:input {:type "text" :name "username"}]]
+       [:p "Password:  " [:input {:type "password" :name "password"}]]
+       [:input {:type "submit" :value "Log in"}][:br]])
+    message))
+
+
+
+(defn home
+  [message]
+  (layout
+    (html5
+      [:h2 "HOMEEEEEEEEEE"]
       [:form {:method "post" :action "/login"}
        [:p "Username:  " [:input {:type "text" :name "username"}]]
        [:p "Password:  " [:input {:type "password" :name "password"}]]

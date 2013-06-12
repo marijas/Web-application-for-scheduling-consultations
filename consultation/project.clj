@@ -9,7 +9,8 @@
                  [hiccup "1.0.3"]
                  [ring/ring-core "1.1.8"]
                  [ring/ring-jetty-adapter "1.1.8"]
-                 [com.datomic/datomic-free "0.8.3861"]
+                 [mysql/mysql-connector-java "5.1.25"]
+                 [org.clojure/java.jdbc "0.3.0-alpha4"]
                  [clojure-soup "0.0.1"]]
   :dev-dependencies [[lein-eclipse "1.0.0"]]
   :main consultation.core)
